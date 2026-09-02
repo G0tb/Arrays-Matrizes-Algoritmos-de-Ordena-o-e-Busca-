@@ -1,0 +1,5 @@
+# --- ALGORITMO 2: QUICK SORT ---
+def particionar(lista, inicio, fim):
+    global comp_quick, trocas_quick
+    pivo = lista[fim]
+    i = inicio - 1
