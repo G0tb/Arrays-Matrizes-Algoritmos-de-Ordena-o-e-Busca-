@@ -3,16 +3,10 @@
 
 ---
 
-## 📑 Sumário
-1. ★[Parte 1 - Pesquisa: Bubble Sort vs Quick Sort](#parte-1--pesquisa-bubble-sort-e-quick-sort)
-2. ★[Parte 2 - Experimento de Ordenação](#parte-2--experimento-de-ordenação)
-3. ★[Parte 3 - Investigação de Busca em Matrizes](#parte-3--investigação-de-busca-em-matrizes)
-4. ★[Parte 4 - Hands On 1: Investigação do Array](#parte-4--hands-on-1-investigação-do-array)
-5. ★[Parte 5 - Hands On 2: Matriz Aplicada - Monitoramento de Sensores](#parte-5--hands-on-2-matriz-aplicada---monitoramento-de-sensores)
-6. ★[Parte 6 - Análise e Conclusão](#parte-6--análise-e-conclusão)
-
+![Python](https://img.shields.io/badge/Python-3.x-white)
+![Status](https://img.shields.io/badge/status-concluído-white )
+![Faculdade](https://img.shields.io/badge/disciplina-Estruturas%20de%20Dados-white )
 ---
-
 ## ★ PARTE 1 - Pesquisa: Bubble Sort e Quick Sort
 
 ### Bubble Sort
@@ -37,8 +31,6 @@ O Quick Sort é um algoritmo de ordenação mais eficiente. Ele escolhe um eleme
 ---
 
 ## ★ PARTE 2 – Experimento de Ordenação
-
-* **Notebook no Google Colab:** [Acessar Código da Ordenação](https://colab.research.google.com/drive/11hFjAky0FPpjv9XUbXSqZ0aft8B1TGOq?usp=sharing)
 
 ### Tabela de Operações
 
@@ -75,8 +67,6 @@ O Quick Sort é um algoritmo de ordenação mais eficiente. Ele escolhe um eleme
 
 ## ★ PARTE 3 - Investigação de Busca em Matrizes
 
-* **Notebook no Google Colab:** [Acessar Código de Busca](https://colab.research.google.com/drive/1baMaX1rRTWy69n2iQGN2Wds8iDnEyRya?usp=sharing)
-
 ### Quantidade de Comparações Realizadas
 
 | Matriz | Nº de elementos | Busca no início | Busca no final | Valor inexistente |
@@ -97,21 +87,20 @@ O Quick Sort é um algoritmo de ordenação mais eficiente. Ele escolhe um eleme
   Ocorre quando o elemento procurado está na última posição ou não existe na matriz.
 
 * **d) Como o aumento das dimensões da matriz influencia a quantidade de operações?**  
-  <!-- ESPAÇO PARA SUA RESPOSTA -->
+  Conforme o tamanho da matriz aumenta, a quantidade de comparações necessárias no pior caso cresce proporcionalmente ao número total de elementos
 
 * **e) Qual a complexidade da busca sequencial em uma matriz com m linhas e n colunas?**  
-  <!-- ESPAÇO PARA SUA RESPOSTA -->
+  O(m×n)
 
 ---
 
 ## ★ PARTE 4 - Hands On 1: Investigação do Array
 
-### Código Desenvolvido
-<!-- Cole aqui o código ou o link para src/parte4_temperaturas.py -->
 
 ### Análise e Complexidade
-* **Operações de percurso:** <!-- Inserir quantidade de percursos/passos -->
-* **Complexidade do algoritmo:** <!-- Inserir complexidade e justificativa -->
+* **Operações de percurso:** O código percorre o array 4 vezes:
+*  1 - a entrada de dados 2- na exibição dos valores 3- na busca do maior/menor, 4- na contagem de valores acima da média, então, 4 percursos × 10 elementos, Isso dá  40 operações no total
+* **Complexidade do algoritmo:** O(n), pois o número de operações cresce de forma linear com o tamanho do array
 
 ---
 
@@ -122,26 +111,28 @@ O Quick Sort é um algoritmo de ordenação mais eficiente. Ele escolhe um eleme
 
 ### Respostas Conceituais
 * **Por que são necessários loops aninhados?**  
-  <!-- ESPAÇO PARA SUA RESPOSTA -->
+  Porque a matriz tem duas dimensões: é preciso percorrer cada sensor (linha) e, dentro de cada sensor, cada horário (coluna)
 
 * **Qual o papel dos índices `[i][j]`?**  
-  <!-- ESPAÇO PARA SUA RESPOSTA -->
+  O índice i representa o sensor (linha) e o índice j representa o horário (coluna)
 
 * **Quantas posições da matriz são percorridas?**  
-  <!-- ESPAÇO PARA SUA RESPOSTA -->
+  5 × 24 = 120 posições
 
 * **Qual a relação entre o número de linhas, colunas e quantidade de operações?**  
-  <!-- ESPAÇO PARA SUA RESPOSTA -->
+  Quanto mais sensores ou mais horários existirem, mais operações serão necessárias
 
 ---
 
 ## ★ PARTE 6 - Análise e Conclusão
 
 * **1. O aumento do tamanho da estrutura de dados influencia a quantidade de operações?**  
-  <!-- ESPAÇO PARA SUA RESPOSTA -->
+  Sim. Quanto maior a quantidade de elementos, maior será o número de operações necessárias para realizar a busca ou a ordenação.
 
 * **2. Bubble Sort e Quick Sort crescem da mesma maneira quando o número de elementos aumenta?**  
-  <!-- ESPAÇO PARA SUA RESPOSTA -->
-
+  Não. O Bubble Sort aumenta as operações mais rapidamente, enquanto o Quick Sort apresenta um crescimento menor e costuma ser mais eficiente quando a quantidade de elementos aumenta.
 * **3. Por que analisar somente o resultado final da ordenação não é suficiente para comparar algoritmos?**  
-  <!-- ESPAÇO PARA SUA RESPOSTA -->
+  Porque dois algoritmos podem chegar ao mesmo resultado final, mas realizando quantidades muito diferentes de comparações e trocas, só da pra avaliar a real eficiência de cada um observando o número de operações realizadas durante o processo, não apenas o resultado
+
+  ---
+📘 Trabalho desenvolvido para a disciplina de Estruturas de Dados, prof. Karla Sartin — 2026
